@@ -46,7 +46,10 @@ jobs:
           go mod tidy
           make db-start
           make db-fill
-          make server-start m=${{ secrets.MNEMONICS }}&
+
+      - name: run
+        run: make server-start m=${{ secrets.MNEMONICS }}&
+
       - name: Wait on localhost
         uses: iFaxity/wait-on-action@v1
         with:
