@@ -70,6 +70,14 @@ jobs:
             /tests/scheme_test/report.html
             /tests/scheme_test/assets/
         if: ${{ always() }}
+        
+      - name: Upload pytest test results2
+        uses: actions/upload-artifact@v4
+        with:
+          name: schema-pytest-results
+          path: |
+            ///home/runner/work/tfgrid-sdk-go/tfgrid-sdk-go/grid-proxy/tests/scheme_test/report.html
+        if: ${{ always() }}
       
       - name: print all files
         run: |
