@@ -46,7 +46,7 @@ jobs:
           python-version: "3.10"
 
       - name: Installing all necessary packages
-        run: pip install -r tests/schema_test/requirements.txt
+        run: pip install -r grid-proxy/tests/scheme_test/requirments.txt
 
       - name: Build
         if: ${{ github.event.inputs.NETWORK }} != 'dev'
