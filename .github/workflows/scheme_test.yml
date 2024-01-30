@@ -69,4 +69,12 @@ jobs:
           path: |
             ./tests/scheme_test/report.html
             ./tests/scheme_test/assets
+            /tests/scheme_test/report.html
+            /tests/scheme_test/assets
+            scheme_test/report.html
+            scheme_test/assets
+            ./report.html
+            ./assets
+            report.html
+            assets
         if: ${{ always() }}
