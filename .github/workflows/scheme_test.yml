@@ -60,7 +60,7 @@ jobs:
           GO111MODULE: on
 
       - name: Run tests
-        run: NETWORK=${{ github.event.inputs.NETWORK }} python3 -m pytest -v ./tests/scheme_test/ --html=report.html
+        run: NETWORK=${{ github.event.inputs.NETWORK }} python3 -m pytest -v ./tests/scheme_test/ --html=--html=./tests/scheme_test/report.html
       
       - name: Upload pytest test results
         uses: actions/upload-artifact@v3
@@ -69,5 +69,4 @@ jobs:
           path: |
             ./tests/scheme_test/report.html
             ./tests/scheme_test/assets
-            ./tests/scheme_test/
         if: ${{ always() }}
