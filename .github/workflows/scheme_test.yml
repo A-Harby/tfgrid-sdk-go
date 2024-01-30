@@ -67,6 +67,7 @@ jobs:
         with:
           name: schema-pytest-results
           path: |
-            report.html
-            assets
+            ./tests/scheme_test/report.html
+            ./tests/scheme_test/assets
+            ./tests/scheme_test/
         if: ${{ always() }}
