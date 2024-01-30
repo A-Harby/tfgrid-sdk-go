@@ -48,7 +48,7 @@ jobs:
           make db-fill
 
       - name: run
-        run: make server-start m=${{ secrets.MNEMONICS }}&
+        run: make server-start m=${{ secrets.MNEMONICS }}
 
       - name: Wait on localhost
         uses: iFaxity/wait-on-action@v1
