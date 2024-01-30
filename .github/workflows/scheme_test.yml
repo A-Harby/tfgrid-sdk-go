@@ -48,7 +48,7 @@ jobs:
           make db-fill
 
       - name: run
-        run: make server-start m='violin chair festival kiss double belt hen differ stamp boy else bag'
+        run: make server-start m='violin chair festival kiss double belt hen differ stamp boy else bag'&
 
       - name: Wait on localhost
         uses: iFaxity/wait-on-action@v1
