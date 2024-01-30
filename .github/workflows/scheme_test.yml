@@ -49,7 +49,7 @@ jobs:
           python-version: "3.10"
 
       - name: Installing all necessary packages
-        run: pip install -r grid-proxy/tests/scheme_test/requirments.txt
+        run: pip install -r tests/scheme_test/requirments.txt
 
       - name: Build
         run: |
